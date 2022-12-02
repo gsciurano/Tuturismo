@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuTurismo</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <nav class="nav">
+          <a href="index.html" class="logo nav-link"><img src="imagenes/tuturismo.png"></a>
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="contacto.html" class="nav-menu-link nav-link">CONTACTO</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="excursiones.html" class="nav-menu-link nav-link">EXCURSIONES</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <main class="main-excursion">
+        <h1> Historietas </h1>
+        <img src="imagenes/hijitus.jpg">
+        <article class="intro-index-excursion">
+            
+            <p>
+                En esta excursión pasearemos en busca de las estatuas en 
+                homenaje a los personajes mas famosos de las historietas argentinas. 
+                El recorrido es por Puerto madero 
+                llegando a encontrar más de dieciséis estatuas caricaturescas.
+            </p>
+            <h3>Duracion:</h3>
+            <li>120 minutos</li>
+            <h3>Precio:</h3>
+            <li>1000$</li>
+            
+        <article>
+            
+    </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.707956608688!2d-58.36487428483902!3d-34.61154568045751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335282e7c5ab9%3A0x37fad4b8e8b64970!2sEl%20Loco%20Ch%C3%A1vez%20-%20Paseo%20de%20la%20Historieta!5e0!3m2!1ses!2sar!4v1669592282575!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <div class="form">
+        <h3>Precio: 1000$</h1>
+            <label> Cantidad de personas para la excursión </label> <input type="number" name="" id="valor2" step="0.001" oninput="calcular()"> <br><br>
+            <label> Total $ </label> <input type="number" name="" id="total" step="0.001"> <br><br>
+
+            <button> Enviar</button>
+    </div>
+    
+    
+    
+    <script type="text/javascript">
+        function calcular() {
+    try { 
+        var b = parseFloat(document.getElementById("valor2"). value) || 0;
+    
+                document.getElementById("total").value = 1000 * b;
+            } catch (e){}
+    
+        }
+    
+    </script>
+
+
+
+
+    <footer class="pie">
+        <li>Terminos y Condiciones</li>
+        <li>Valores de Uso</li>
+        <li>Copyright © Tu Turismo</li>
+        <li>Litovicius Patricia</li>
+        <li>Rojas Ponce Tomas</li>
+        <li>Sciurano Geronimo</li>
+        <li>Diseño y Desarrollo Web</li>
+    </footer>
+</body>
+
+</html>
